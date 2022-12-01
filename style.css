@@ -3,10 +3,14 @@
 :root {
     --primary: #A2B13A;
     --body: #596C70;
+    --header: #7B7B7B;
+    --sub-header: #3B3B3B;
     --hover: #a2b90d;
     --highlight: #8D9D11;
     --white-mute: #C6C6C6;
     --pure-white: white;
+    --pure-black: #000000;
+    --header-size: 2.8rem;
 }
 
 * {
@@ -77,7 +81,7 @@
 }
 
 .home-sctn>h1 {
-    font-size: 2.8rem;
+    font-size: var(--header-size);
     font-weight: 800;
     color: var(--white-mute);
     text-align: center;
@@ -97,6 +101,7 @@
 
 .about-sctn {
     height: fit-content;
+    padding: 0 56px;
 }
 
 .intro {
@@ -104,13 +109,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 56px;
-    gap: 56px;
-}
-
-.intro-image {
-    position: relative;
-    left: 2rem;
+    padding-right: 56px;
+    gap: 60px;
 }
 
 .mission {
@@ -122,7 +122,6 @@
 }
 
 .intro-text {
-    position: relative;
     margin-top: 32px;
 }
 
@@ -141,7 +140,6 @@
 }
 
 .mission-text {
-    max-width: 80%;
     margin-bottom: 24px;
     color: var(--body);
 }
@@ -160,3 +158,72 @@
     color: var(--pure-white);
     cursor: pointer;
 }
+
+.how {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 32px 56px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+}
+
+.how-head {
+    grid-column: span 4;
+    color: var(--header);
+    font-size: var(--header-size);
+}
+
+.step-1 {
+    grid-column: span 4;
+}
+
+.step-2 {
+    grid-column: span 4;
+}
+
+.step-3 {
+    grid-column: span 4;
+}
+
+.how-footer {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.how-footer>p {
+    width: fit-content;
+    color: var(--pure-black);
+    font-weight: 500;
+}
+
+.step {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-columns: 0.4fr repeat(3, 1fr);
+    margin-top: 24px;
+}
+
+.step-image {
+    height: 80px;
+    width: auto;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.step-headline {
+    grid-row: span 1;
+    grid-column: span 3;
+    font-weight: 600;
+    color: var(--sub-header);
+}
+
+.step-text {
+    grid-row: span 2;
+    grid-column: span 3;
+    color: var(--sub-header);
+}
+
