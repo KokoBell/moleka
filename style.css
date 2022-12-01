@@ -11,6 +11,8 @@
     --pure-white: white;
     --pure-black: #000000;
     --header-size: 2.8rem;
+    --service: #8A8A8A;
+    --default-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -18,6 +20,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+}
+
+li {
+    list-style: none;
 }
 
 .nav {
@@ -164,13 +170,16 @@
     grid-template-rows: 0.2fr 1fr;
     grid-template-columns: repeat(4, 1fr);
     padding: 32px 56px;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: var(--default-shadow);
+}
+
+.headline {
+    color: var(--header);
+    font-size: var(--header-size);
 }
 
 .how-head {
     grid-column: span 4;
-    color: var(--header);
-    font-size: var(--header-size);
 }
 
 .step-1 {
@@ -227,3 +236,118 @@
     color: var(--sub-header);
 }
 
+.headline {
+    margin-top: 60px;
+}
+
+.services-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.service {
+    border: 2px solid var(--service);
+    color: var(--service);
+    background-color: transparent;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+.service:hover {
+    border-color: var(--header);
+    background-color: var(--header);
+    color: var(--pure-white);
+    cursor: pointer;
+}
+
+.service:nth-child(1) {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--pure-white);
+}
+
+.service:nth-child(1):hover {
+    border-color: var(--hover);
+    background-color: var(--hover);
+    cursor: default;
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card {
+    display: none;
+    flex-direction: row;
+    box-shadow: var(--default-shadow);
+}
+
+.service-card:nth-child(1) {
+    display: flex;
+}
+
+.services-images {
+    display: flex;
+    flex-direction: row;
+    left: 400px;
+}
+
+.service-img {
+    height: 14.8rem;
+    width: 14.8rem;
+}
+
+.arrow-right {
+    position: relative;
+    height: 14.8rem;
+    z-index: 20;
+    left: -27px;
+}
+
+.arrow-right-2 {
+    position: relative;
+    left: -56px;
+    height: 14.8rem;
+    z-index: 20;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 48px;
+}
+
+.service-headline {
+    margin-bottom: 8px;
+}
+
+.service-desc {
+    margin-bottom: 8px;
+}
+
+.service-sub {
+    margin-bottom: 8px;
+}
+
+.available {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    height: 20px;
+    padding-right: 12px;
+}
