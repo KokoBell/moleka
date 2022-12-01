@@ -13,6 +13,7 @@
     --header-size: 2.8rem;
     --service: #8A8A8A;
     --default-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    --contact: #F3FAC5;
 }
 
 * {
@@ -448,4 +449,9 @@ li {
     box-shadow: -16px 16px 0 0 var(--primary);
     left: 12px;
     top: -8px;
+}
+
+.contact-sctn {
+    width: 100%;
+    background-color: var(--contact);
 }
