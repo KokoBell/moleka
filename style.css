@@ -407,7 +407,7 @@ li {
     padding: 28px;
 }
 
-.achievement-card>p{
+.achievement-card>p {
     color: var(--sub-header);
 }
 
@@ -420,4 +420,32 @@ li {
 
 .inv {
     gap: 24px;
+}
+
+.actions-sctn {
+    padding: 0 56px;
+    padding-bottom: 40px;
+}
+
+.mol {
+    margin-bottom: 40px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.action {
+    height: 18rem;
+    width: auto;
+}
+
+.action:hover {
+    position: relative;
+    box-shadow: -16px 16px 0 0 var(--primary);
+    left: 12px;
+    top: -8px;
 }
