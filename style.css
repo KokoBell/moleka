@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #A2B13A;
+    --hover: #a2b90d;
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.nav {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav:hover {
+    color: var(--hover);
+}
+
+.nav-logo {
+    height: 68px;
+    cursor: pointer;
+}
+
+.cta-primary {
+    height: 100%;
+    width: fit-content;
+    padding: 0 24px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--primary);
+    border: 0;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.cta-primary:hover {
+    background-color: var(--hover);
+}
+
+.navigation {
+    top: 24px;
+    margin: 0 10%;
+    position: absolute;
+    background: transparent;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-weight: 600;
+}
+
+.navigation>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sctn {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/images/background.png');
+    background-color: rgba(0, 0, 0, 0.86);
+    background-blend-mode: overlay;
+}
+
+.about-sctn {
+    width: 100vw;
+    height: fit-content;
+}
