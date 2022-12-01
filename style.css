@@ -3,7 +3,8 @@
 :root {
     --primary: #A2B13A;
     --hover: #a2b90d;
-    --white: white;
+    --white-mute: #C6C6C6;
+    --pure-white: white;
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 .nav {
-    color: var(--white);
+    color: var(--white-mute);
     cursor: pointer;
 }
 
@@ -28,11 +29,11 @@
 }
 
 .cta-primary {
-    height: 100%;
+    height: 68px;
     width: fit-content;
     padding: 0 24px;
     font-weight: 700;
-    color: var(--white);
+    color: var(--pure-white);
     background-color: var(--primary);
     border: 0;
     justify-self: flex-end;
@@ -63,9 +64,33 @@
 .home-sctn {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url('assets/images/background.png');
     background-color: rgba(0, 0, 0, 0.86);
     background-blend-mode: overlay;
+    gap: 12px;
+}
+
+.home-sctn>h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--white-mute);
+    text-align: center;
+}
+
+.home-sctn>p {
+    color: var(--white-mute);
+    text-align: center;
+    max-width: 36rem;
+    margin-bottom: 16px;
+}
+
+.home-sctn>h1>span {
+    border: 4px solid var(--primary);
+    padding: 0 12px;
 }
 
 .about-sctn {
