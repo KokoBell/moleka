@@ -576,6 +576,7 @@ li {
 }
 
 .radio-label {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -594,6 +595,19 @@ li {
 .radio-label>img {
     height: 40px;
     width: 40px;
+}
+
+.radio-label>img:nth-child(2) {
+    display: none;
+}
+
+.check-section>input:checked+.radio-label>img:nth-child(2) {
+    display: inline;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -20px;
+    right: -20px;
 }
 
 .submit {
