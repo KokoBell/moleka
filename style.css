@@ -2,6 +2,7 @@
 
 :root {
     --primary: #A2B13A;
+    --primary-dark: #475009;
     --body: #596C70;
     --header: #7B7B7B;
     --sub-header: #3B3B3B;
@@ -13,7 +14,9 @@
     --header-size: 2.8rem;
     --service: #8A8A8A;
     --default-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+    --contact-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
     --contact: #F3FAC5;
+    --contact-dark: #a1b13a2f;
 }
 
 * {
@@ -452,6 +455,148 @@ li {
 }
 
 .contact-sctn {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding: 56px;
     background-color: var(--contact);
+}
+
+.details {
+    width: 48%;
+    background-color: var(--contact-dark);
+    padding: 0 28px;
+    padding-top: 40px;
+    margin-right: 2%;
+    margin-top: 60px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    background-color: var(--pure-white);
+    padding: 20px;
+    margin: 28px 0;
+    gap: 12px;
+    box-shadow: var(--contact-shadow);
+}
+
+.detail-icon {
+    height: 60px;
+    width: auto;
+}
+
+.detail-text {
+    width: 100%;
+}
+
+.detail-head {
+    font-weight: 400;
+    font-size: medium;
+    color: var(--body);
+}
+
+.detail-body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail-copy {
+    font-weight: 500;
+    color: var(--sub-header);
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-left: 2%;
+    padding-left: 40px;
+    gap: 24px;
+}
+
+.form-headline {
+    margin-top: 0;
+    color: var(--sub-header);
+}
+
+.form-intro {
+    color: var(--sub-header);
+}
+
+.check-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+}
+
+.check-section>input {
+    display: none;
+    position: absolute;
+    top: -4px;
+}
+
+
+
+.check-section>input:nth-child(1) {
+    left: 6.6rem;
+}
+
+.check-section>input:nth-child(3) {
+    left: 14.8rem;
+}
+
+.check-section>input:nth-child(5) {
+    left: 23rem;
+}
+
+.check-section>input:checked+.radio-label {
+    background-color: var(--pure-white);
+}
+
+.standard {
+    height: 56px;
+}
+
+.input {
+    border: 0;
+    width: 90%;
+    padding: 16px;
+    background-color: var(--contact-dark);
+}
+
+.input:focus,
+.input:focus-within {
+    color: var(--pure-black);
+    outline: 1px solid var(--primary);
+}
+
+.radio-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: fit-content;
+    gap: 20px;
+    padding: 20px 0;
+    font-size: small;
+    font-weight: 600;
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+    cursor: pointer;
+}
+
+.radio-label>img {
+    height: 40px;
+    width: 40px;
+}
+
+.submit {
+    align-self: flex-end;
+    margin-right: 56px;
 }

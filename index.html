@@ -271,24 +271,86 @@
                     </h3>
                     <div class="detail-body-container">
                         <ul>
-                            <li>132 Moripe Gardens</li>
-                            <li>Kameelrevier Mbibane</li>
-                            <li>0449</li>
+                            <li class="detail-copy">132 Moripe Gardens</li>
+                            <li class="detail-copy">Kameelrevier Mbibane</li>
+                            <li class="detail-copy">0449</li>
                         </ul>
                         <ul>
-                            <li>05 Bonsamara Street</li>
-                            <li>Mokopane Industrial</li>
-                            <li>0600</li>
+                            <li class="detail-copy">05 Bonsamara Str</li>
+                            <li class="detail-copy">Mokopane</li>
+                            <li class="detail-copy">0600</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="detail email"></div>
-            <div class="detail call"></div>
-            <div class="detail open"></div>
+            <div class="detail email">
+                <img src="assets/icons/email.svg" alt="" class="detail-icon">
+                <div class="detail-text">
+                    <h3 class="detail-head">
+                        Email
+                    </h3>
+                    <p class="detail-copy">
+                        info@molekacreations.co.za
+                    </p>
+                </div>
+            </div>
+            <div class="detail call">
+                <img src="assets/icons/call.svg" alt="" class="detail-icon">
+                <div class="detail-text">
+                    <h3 class="detail-head">
+                        Call
+                    </h3>
+                    <p class="detail-copy">
+                        info@molekacreations.co.za
+                    </p>
+                </div>
+            </div>
+            <div class="detail open">
+                <img src="assets/icons/open.svg" alt="" class="detail-icon">
+                <div class="detail-text">
+                    <h3 class="detail-head">
+                        Open Hours
+                    </h3>
+                    <p class="detail-copy">
+                        Monday - Saturday, 8am - 6pm
+                    </p>
+                </div>
+            </div>
         </div>
-        <form action="" class="form"></form>
-        <button class="cta-primary">Send Message</button>
+        <form action="" class="contact-us">
+            <h2 class="form-headline headline">
+                How can we help?
+            </h2>
+            <p class="form-intro">
+                Your questions and inquiries will be responded to within 48 hours, regardless of how simple or complex.
+            </p>
+            <div class="check-section">
+                <input type="radio" id="construction" name="service" value="Construction">
+                <label class="radio-label" for="construction"><img
+                        src="assets/icons/construction.svg">Construction</label>
+                <input type="radio" id="mining" name="service" value="Mining">
+                <label class="radio-label" for="mining"><img src="assets/icons/mining.svg">Mining</label>
+                <input type="radio" id="asphalt" name="service" value="Asphalt">
+                <label class="radio-label" for="asphalt"><img src="assets/icons/asphalt.svg">Asphalt</label>
+            </div>
+            <input class="standard input" type="text" name="fname" id="fname" placeholder="Your full Name">
+            <label for="fname" style="display: none;">Name</label>
+            <input class="standard input" type="text" name="email" id="email" placeholder="Your email address">
+            <label for="email" style="display: none;">Email Adress</label>
+            <select class="standard input" style="color: var(--body);" name="service-type" id="type">
+                <option value="" disabled selected>Select your option</option>
+                <option value="sub-contracting">Sub-Contracting</option>
+                <option value="specialist">Specialist Hire</option>
+                <option value="plant-hire">Plant Hire</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="type" style="display: none;">Service Type</label>
+            <textarea class="input" id="message" name="message" placeholder="Tell us more about your requirements..."
+                rows="4"></textarea>
+            <label for="message" style="display: none;">More Details</label>
+            <button type="submit" class="cta-primary submit">Send Message</button>
+        </form>
+
     </section>
     <section class="footer-sctn">
         <footer>
