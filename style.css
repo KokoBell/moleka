@@ -32,8 +32,20 @@ li {
 }
 
 .nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white-mute);
     cursor: pointer;
+}
+
+.nav>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .nav:hover {
@@ -70,12 +82,6 @@ li {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     font-weight: 600;
-}
-
-.navigation>p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-sctn {
@@ -156,6 +162,7 @@ li {
 }
 
 .learn {
+    text-decoration: none;
     border: 2px solid var(--primary);
     color: var(--highlight);
     background-color: transparent;

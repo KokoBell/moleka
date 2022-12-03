@@ -13,10 +13,18 @@
 <body>
     <nav class="navigation">
         <img class="nav-logo" src="assets/images/logo.png" alt="Moleka Creations Logo">
-        <p class="home-p nav">Home</p>
-        <p class="about-p nav">About Us</p>
-        <p class="services-p nav">Our Services</p>
-        <button class="cta-primary">Work with Us</button>
+        <a class="home-p nav" href="#home">
+            <p>Home</p>
+        </a>
+        <a href="#about" class="about-p nav">
+            <p>About Us</p>
+        </a>
+        <a href="#services" class="services-p nav">
+            <p>Our Services</p>
+        </a>
+        <a href="#contact">
+            <button class="cta-primary">Work with Us</button>
+        </a>
     </nav>
     <section id="home" class="home-sctn">
         <h1>
@@ -24,7 +32,9 @@
         </h1>
         <p>Get a complete range of services and equipment. From specialised contractors, to in-house asphalt
             manufacturing.</p>
-        <button class="cta-primary">Book a Site Inspection</button>
+        <a href="#contact">
+            <button class="cta-primary">Book a Site Inspection</button>
+        </a>
     </section>
     <section id="about" class="about-sctn">
         <div class="intro">
@@ -43,9 +53,9 @@
                     communities across the country, with a specific focus on the mining, construction and asphalt
                     manufacturing industries.
                 </p>
-                <button class="learn">
+                <a href="#contact" class="learn">
                     Learn More
-                </button>
+                </a>
             </div>
         </div>
         <div class="how">
@@ -73,10 +83,12 @@
             </div>
             <div class="how-footer">
                 <p class="step-text">Ready to get your project off the ground?</p>
-                <button class="cta-primary">Reach Out to Us</button>
+                <a href="#contact">
+                    <button class="cta-primary">Reach Out to Us</button>
+                </a>
             </div>
         </div>
-        <div class="services">
+        <div id="services" class="services">
             <h2 class="headline">Our fields of expertise</h2>
             <div class="services-buttons">
                 <button class="construction service">
@@ -374,7 +386,9 @@
             </div>
             <div class="socials">
                 <h2>Contact Us</h2>
-                <button class="cta-primary touch">Get in Touch</button>
+                <a href="#contact">
+                    <button class="cta-primary touch">Get in Touch</button>
+                </a>
                 <div class="footer-icons"></div>
             </div>
         </footer>
