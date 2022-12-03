@@ -291,7 +291,7 @@ li {
     color: var(--pure-white);
 }
 
-.service:nth-child(1):hover {
+.selected:hover {
     border-color: var(--hover);
     background-color: var(--hover);
     cursor: default;
@@ -309,7 +309,7 @@ li {
     box-shadow: var(--default-shadow);
 }
 
-.service-card:nth-child(1) {
+.selected-card {
     display: flex;
 }
 
