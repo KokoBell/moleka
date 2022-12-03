@@ -262,6 +262,7 @@ li {
 .services-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 48px;
@@ -361,6 +362,7 @@ li {
 .available {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -382,10 +384,18 @@ li {
 .sponsors-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 40px;
     overflow: hidden;
     margin-bottom: 80px;
 }
+
+.sponsor {
+    height: 40px;
+    width: auto;
+}
+
 
 .sponsor-subheadline {
     display: flex;
@@ -523,6 +533,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .detail-copy {
@@ -552,6 +563,7 @@ li {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     gap: 24px;
 }
@@ -788,5 +800,6 @@ footer {
 
     footer {
         padding: 4%;
+        flex-wrap: wrap;
     }
 }
