@@ -302,6 +302,7 @@ li {
 }
 
 .service-card {
+    height: fit-content;
     display: none;
     flex-direction: row;
     box-shadow: var(--default-shadow);
@@ -312,19 +313,20 @@ li {
 }
 
 .services-images {
+    height: fit-content;
     display: flex;
     flex-direction: row;
     left: 400px;
 }
 
 .service-img {
-    height: 14.8rem;
-    width: 14.8rem;
+    max-height: 16rem;
+    width: auto;
 }
 
 .arrow-right {
     position: relative;
-    height: 14.8rem;
+    height: 100%;
     z-index: 20;
     left: -27px;
 }
@@ -332,7 +334,7 @@ li {
 .arrow-right-2 {
     position: relative;
     left: -56px;
-    height: 14.8rem;
+    height: 100%;
     z-index: 20;
 }
 
@@ -341,6 +343,7 @@ li {
     flex-direction: column;
     justify-content: center;
     padding: 20px 48px;
+    height: fit-content;
 }
 
 .service-headline {
@@ -392,7 +395,7 @@ li {
 }
 
 .achievements {
-    height: 26rem;
+    height: fit-content;
     background-image: url('assets/images/achievements.png');
     background-size: contain;
     z-index: 60;
@@ -400,6 +403,7 @@ li {
     flex-direction: column;
     align-items: center;
     padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
 }
 
 .achieve-subtitle {
@@ -409,6 +413,7 @@ li {
 }
 
 .pay {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -416,6 +421,7 @@ li {
 .achievement-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 24px;
     padding: 0 56px;
 }
@@ -458,7 +464,7 @@ li {
 }
 
 .action {
-    height: 18rem;
+    max-height: 18rem;
     width: auto;
 }
 
@@ -472,6 +478,7 @@ li {
 .contact-sctn {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     width: 100%;
     padding: 56px;
     background-color: var(--contact);
@@ -683,18 +690,6 @@ footer {
     align-self: flex-start;
 }
 
-@media (max-width: 650px) {
-    .nav>p {
-        font-size: x-small;
-    }
-
-    .step {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 @media (max-width: 1110px) {
     .nav-logo {
         height: 34px;
@@ -715,13 +710,83 @@ footer {
 
     .intro {
         flex-direction: column;
+        gap: 0;
     }
 
     .how {
         margin-top: 48px;
     }
 
-    .intro-image {
+    .services-buttons {
+        gap: 20px;
+    }
+
+    .service-card {
+        flex-direction: column;
+    }
+
+    .service-headline {
+        font-size: medium;
+    }
+
+    .service-desc {
+        font-size: small;
+    }
+
+    .service-sub {
+        font-size: small;
+    }
+
+    .list-item {
+        font-size: small;
+    }
+
+    .check {
+        height: 12px;
+    }
+
+    .services-images {
+        justify-content: center;
+    }
+
+    .contact-sctn {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .contact-us {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav>p {
+        font-size: x-small;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-buttons {
+        gap: 4px;
+    }
+
+    .pay {
+        font-size: larger;
+    }
+
+    .action {
         height: 12rem;
+    }
+
+    footer {
+        padding: 4%;
     }
 }
