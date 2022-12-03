@@ -285,7 +285,7 @@ li {
     cursor: pointer;
 }
 
-.service:nth-child(1) {
+.selected {
     border: 2px solid var(--primary);
     background-color: var(--primary);
     color: var(--pure-white);
