@@ -33,16 +33,13 @@ function changeService(event) {
     if (event.target.classList.contains('construction')) {
         constr.classList.add('selected')
         constrCard.classList.add('selected-card')
-        console.log(constr)
     }
     if (event.target.classList.contains('mining')) {
         mining.classList.add('selected')
         miningCard.classList.add('selected-card')
-        console.log(mining)
     }
     if (event.target.classList.contains('asphalt')) {
         asphalt.classList.add('selected')
         asphaltCard.classList.add('selected-card')
-        console.log(asphalt)
     }
 }
