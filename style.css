@@ -54,6 +54,8 @@ li {
 
 .nav-logo {
     height: 68px;
+    width: auto;
+    align-self: center;
     cursor: pointer;
 }
 
@@ -122,6 +124,7 @@ li {
 }
 
 .intro {
+    position: relative;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -130,15 +133,19 @@ li {
     gap: 60px;
 }
 
+.intro-image {
+    position: relative;
+}
+
 .mission {
     position: relative;
-    top: -68px;
-    height: 96%;
+    top: -56px;
     max-height: 20rem;
     width: auto;
 }
 
 .intro-text {
+    position: relative;
     margin-top: 32px;
 }
 
@@ -674,4 +681,47 @@ footer {
 
 .touch {
     align-self: flex-start;
+}
+
+@media (max-width: 650px) {
+    .nav>p {
+        font-size: x-small;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1110px) {
+    .nav-logo {
+        height: 34px;
+        width: auto;
+    }
+
+    .cta-primary {
+        font-size: x-small;
+    }
+
+    .home-sctn>h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-sctn>p {
+        font-size: small;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .how {
+        margin-top: 48px;
+    }
+
+    .intro-image {
+        height: 12rem;
+    }
 }
