@@ -592,6 +592,7 @@ li {
 }
 
 .detail {
+    position: relative;
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -600,6 +601,7 @@ li {
     margin: 28px 0;
     gap: 12px;
     box-shadow: var(--contact-shadow);
+    z-index: 20;
 }
 
 .detail-icon {
@@ -789,6 +791,33 @@ footer {
 .closing>img {
     height: 60px;
     width: 260px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-icons>a>img {
+    position: relative;
+    height: 56px;
+    width: auto;
+}
+
+.footer-icons>a>img:hover {
+    top: -8px;
+}
+
+.footer-icons>a:active {
+    position: relative;
+    top: 0;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
 }
 
 .links a {
