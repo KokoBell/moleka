@@ -73,6 +73,7 @@ li {
 }
 
 .cta-primary:hover {
+    cursor: pointer;
     background-color: var(--hover);
 }
 
@@ -245,11 +246,12 @@ li {
 }
 
 .down-1 {
+    position: absolute;
     height: 5.6rem;
     width: auto;
-    top: 52px;
+    top: 60%;
     right: 40px;
-    position: absolute;
+    z-index: 10;
 }
 
 .step-2 {
@@ -258,11 +260,12 @@ li {
 }
 
 .down-2 {
+    position: absolute;
     height: 5.6rem;
     width: auto;
-    top: 52px;
+    top: 60%;
     right: 40px;
-    position: absolute;
+    z-index: 10;
 }
 
 .step-3 {
@@ -314,9 +317,11 @@ li {
 }
 
 .step-text {
+    position: relative;
     grid-row: span 2;
     grid-column: span 3;
     color: var(--sub-header);
+    z-index: 20;
 }
 
 .services-buttons {
@@ -760,8 +765,21 @@ li {
     color: var(--white-mute);
     font-size: small;
     padding-top: 12px;
-    padding-bottom: 40px;
 
+}
+
+.footer-sctn>p:last-child {
+    padding-bottom: 40px;
+    font-size: x-small;
+}
+
+.footer-sctn>p>a {
+    color: var(--white-mute);
+    text-decoration: none;
+}
+
+.footer-sctn>p>a:hover {
+    color: var(--pure-white);
 }
 
 footer {
@@ -911,6 +929,14 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .down-1 {
+        top: 95%;
+    }
+
+    .down-2 {
+        top: 100%;
     }
 
     .services-buttons {
