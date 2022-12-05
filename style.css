@@ -870,6 +870,11 @@ footer {
         gap: 0;
     }
 
+    .intro-text {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
     .how {
         margin-top: 48px;
     }
